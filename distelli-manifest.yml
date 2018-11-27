@@ -57,4 +57,4 @@ leandrocanoa/NodeUbuntuSimpleApp:
 
     - echo "=====Done with Start======"
 
-    - nodemon server.js
+    - node server.js
