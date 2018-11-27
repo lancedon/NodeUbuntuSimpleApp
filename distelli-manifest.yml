@@ -12,6 +12,7 @@ leandrocanoa/NodeUbuntuSimpleApp:
     - server.js
     - node_modules/*
     - /*
+    - configs/*
   Build:
     - npm install
     - npm test
