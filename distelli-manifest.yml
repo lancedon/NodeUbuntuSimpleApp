@@ -40,13 +40,12 @@ leandrocanoa/NodeUbuntuSimpleApp:
     - sudo cp $DISTELLI_INSTALLHOME/configs/virtualhost.develop /etc/nginx/sites-available/test.conf
     - sudo ln -sf /etc/nginx/sites-available/test.conf /etc/nginx/sites-enabled/test.conf
 
-    
     - npm install
   Start:
-     - echo "=====Begin Start======"
+    - echo "=====Begin Start======"
 
     - echo "---removing old application directory---"
-    #- sudo rm -rf /usr/share/nginx/html/test
+    - sudo rm -rf /usr/share/nginx/html/test
 
     - echo "---Linking to content---"
     - sudo ln -sf $DISTELLI_APPHOME /usr/share/nginx/html/test
