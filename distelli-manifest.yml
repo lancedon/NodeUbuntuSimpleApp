@@ -11,6 +11,7 @@ leandrocanoa/NodeUbuntuSimpleApp:
   PkgInclude:
     - server.js
     - node_modules/*
+    - /*
   Build:
     - npm install
     - npm test
