@@ -56,4 +56,4 @@ leandrocanoa/NodeUbuntuSimpleApp:
 
     - echo "=====Done with Start======"
 
-    #- exec nodejs server.js
+    - exec nodejs server.js

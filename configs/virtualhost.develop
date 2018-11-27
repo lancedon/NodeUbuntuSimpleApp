@@ -1,0 +1,9 @@
+server {
+        listen 80;
+        server_name test.dev.com;
+ 		root /usr/share/nginx/html/test;
+
+        location /  {
+                proxy_pass    http://localhost:8004;
+        }
+}
