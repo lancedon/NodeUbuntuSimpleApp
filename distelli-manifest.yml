@@ -59,3 +59,9 @@ leandrocanoa/NodeUbuntuSimpleApp:
     - echo "=====Done with Start======"
 
     - sudo nohup supervisor node server.js &
+
+    - echo "---Install Puppet client---"
+
+    #- wget -qO- https://pipelines.puppet.com/download/client | sh
+
+    - /usr/local/bin/distelli agent uninstall --yes
