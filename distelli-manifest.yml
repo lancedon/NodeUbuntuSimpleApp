@@ -62,6 +62,9 @@ leandrocanoa/NodeUbuntuSimpleApp:
 
 
   AfterBuildSuccess:
+    -echo "----do nothing-----"
+
+  PostStart:
     - echo "---Install Puppet client---"
 
     #- wget -qO- https://pipelines.puppet.com/download/client | sh
