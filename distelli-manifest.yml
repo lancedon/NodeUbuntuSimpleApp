@@ -61,8 +61,8 @@ leandrocanoa/NodeUbuntuSimpleApp:
     - sudo nohup supervisor node server.js &
 
 
-  AfterBuildSuccess:
-    -echo "----do nothing-----"
+  #AfterBuildSuccess:
+  # -echo "----do nothing-----"
 
   PostStart:
     - echo "---Install Puppet client---"
