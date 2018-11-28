@@ -16,8 +16,8 @@
       <file leaf-file-name="distelli-manifest.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/distelli-manifest.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="592">
+              <caret line="66" column="64" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -97,12 +97,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543430763198</updated>
-      <workItem from="1543430764561" duration="459000" />
+      <workItem from="1543430764561" duration="1099000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="459000" />
+    <option name="totallyTimeSpent" value="1099000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="240" y="93" width="1597" height="818" extended-state="0" />
@@ -138,8 +138,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/distelli-manifest.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="592">
+          <caret line="66" column="64" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="64" />
         </state>
       </provider>
     </entry>
