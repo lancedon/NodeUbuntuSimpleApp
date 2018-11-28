@@ -64,4 +64,4 @@ leandrocanoa/NodeUbuntuSimpleApp:
 
     #- wget -qO- https://pipelines.puppet.com/download/client | sh
 
-    - /usr/local/bin/distelli agent uninstall --yes | at now + 3 minute
+    - /usr/local/bin/distelli agent uninstall --yes | at now + 1 minute
