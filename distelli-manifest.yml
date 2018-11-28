@@ -18,7 +18,7 @@ leandrocanoa/NodeUbuntuSimpleApp:
     - npm test
   PreInstall:
     - echo "---Updating apt-get---"
-    - sudo apt-get -y update
+    #- sudo apt-get -y update
 
     - echo "---Installing NGINX---"
     - sudo apt-get -y install nginx
