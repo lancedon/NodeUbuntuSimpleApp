@@ -17,7 +17,8 @@ leandrocanoa/NodeUbuntuSimpleApp:
     - npm install
     - npm test
     - sudo apt-get install sshpass
-    - sshpass -p mudar#123 ssh -tt root@178.128.176.201 'pwd'
+    - curl www.google.com
+    #- sshpass -p mudar#123 ssh -tt root@178.128.176.201 'pwd'
 
   #AfterBuildSuccess:
     #- echo "----add server to puppet enviroment-----"
