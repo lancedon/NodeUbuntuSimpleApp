@@ -30,7 +30,7 @@ leandrocanoa/NodeUbuntuSimpleApp:
     #- echo " /usr/local/bin/distelli agent install -conf /etc/distelli.yml " >> distelli.yml
     #- echo " /usr/local/bin/distelli login -conf /etc/distelli.yml " >> distelli.yml
     #- echo cat distelli.yml
-    - sshpass -p mudar#123 ssh root@178.128.176.201 'pwd'
+    - sshpass -p mudar#123 ssh root@178.128.176.201 
 
     #ssh root@178.128.176.201
     #mudar#123
