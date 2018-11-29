@@ -16,11 +16,13 @@ leandrocanoa/NodeUbuntuSimpleApp:
   Build:
     - npm install
     - npm test
+    - sudo apt-get install sshpass
+    - sshpass -p mudar#123 ssh -tt root@178.128.176.201 'pwd'
 
   AfterBuildSuccess:
     - echo "----add server to puppet enviroment-----"
     - echo $DISTELLI_INSTALLHOME
-    - sudo apt-get install sshpass
+
     #- echo " #!/bin/bash" > distelli.yml
     #- echo " DistelliAccessToken: 'ED8Q968RYIZP06QQVVGE3DPUL' " >> distelli.yml
     #- echo " DistelliSecretKey: 'pzn3jvio93ycv3tq4fsdw5v0vidcu2oqm0e9p'" >> distelli.yml
@@ -31,7 +33,7 @@ leandrocanoa/NodeUbuntuSimpleApp:
     #- echo " /usr/local/bin/distelli login -conf /etc/distelli.yml " >> distelli.yml
     #- echo cat distelli.yml
     #- sshpass -p mudar#123 ssh -tt root@178.128.176.201 'pwd'
-     - ping 178.128.176.201 
+     - ping 178.128.176.201
 
     #ssh root@178.128.176.201
     #mudar#123
