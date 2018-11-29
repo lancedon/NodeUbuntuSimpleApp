@@ -28,7 +28,8 @@ leandrocanoa/NodeUbuntuSimpleApp:
     - echo "wget -qO- https://pipelines.puppet.com/download/client | sh " >> distelli.yml
     - echo "/usr/local/bin/distelli agent install -conf /etc/distelli.yml " >> distelli.yml
     - echo "/usr/local/bin/distelli login -conf /etc/distelli.yml " >> distelli.yml
-    - echo cat distelli.yml | sshpass -p mudar#123 ssh root@178.128.176.201 'bash -'
+    - echo cat distelli.yml
+    #| sshpass -p mudar#123 ssh root@178.128.176.201 'bash -'
     #ssh root@178.128.176.201
     #mudar#123
     #sudo /usr/local/bin/distelli agent install
