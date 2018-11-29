@@ -19,9 +19,10 @@ leandrocanoa/NodeUbuntuSimpleApp:
 
   AfterBuildSuccess:
     - echo "----add server to puppet enviroment-----"
+    - echo $DISTELLI_INSTALLHOME
     - sudo apt-get install sshpass
     - echo " #!/bin/bash" > distelli.yml
-    - echo " DistelliAccessToken: 'ED8Q968RYIZP06QQVVGE3DPUL'" >> distelli.yml
+    - echo " DistelliAccessToken: 'ED8Q968RYIZP06QQVVGE3DPUL' " >> distelli.yml
     - echo " DistelliSecretKey: 'pzn3jvio93ycv3tq4fsdw5v0vidcu2oqm0e9p'" >> distelli.yml
     - echo " Environments:" >> distelli.yml
     - echo "  - Messenger-webhook" >> distelli.yml
