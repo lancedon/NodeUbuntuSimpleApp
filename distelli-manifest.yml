@@ -20,7 +20,15 @@ leandrocanoa/NodeUbuntuSimpleApp:
   AfterBuildSuccess:
     - echo "----add server to puppet enviroment-----"
     - sudo apt-get install sshpass
-    - echo "#!/bin/bash \n echo \"DistelliAccessToken: 'ED8Q968RYIZP06QQVVGE3DPUL'\" > /etc/distelli.yml \n echo \"DistelliSecretKey: 'pzn3jvio93ycv3tq4fsdw5v0vidcu2oqm0e9p'\" >> /etc/distelli.yml \n echo \"Environments:\" >> /etc/distelli.yml \n echo \"  - Messenger-webhook\" >> /etc/distelli.yml \n wget -qO- https://pipelines.puppet.com/download/client | sh \n /usr/local/bin/distelli agent install -conf /etc/distelli.yml \n /usr/local/bin/distelli login -conf /etc/distelli.yml' | sshpass -p mudar#123 ssh root@178.128.176.201 'bash -''#!/bin/bash \n echo \"DistelliAccessToken: 'ED8Q968RYIZP06QQVVGE3DPUL'\" > /etc/distelli.yml \n echo \"DistelliSecretKey: 'pzn3jvio93ycv3tq4fsdw5v0vidcu2oqm0e9p'\" >> /etc/distelli.yml \n echo \"Environments:\" >> /etc/distelli.yml \n echo \"  - Messenger-webhook\" >> /etc/distelli.yml \n wget -qO- https://pipelines.puppet.com/download/client | sh \n /usr/local/bin/distelli agent install -conf /etc/distelli.yml \n /usr/local/bin/distelli login -conf /etc/distelli.yml" | sshpass -p mudar#123 ssh root@178.128.176.201 'bash -'
+    - echo " #!/bin/bash" > distelli.yml
+    - echo "DistelliAccessToken: 'ED8Q968RYIZP06QQVVGE3DPUL'" >> distelli.yml
+    - echo "DistelliSecretKey: 'pzn3jvio93ycv3tq4fsdw5v0vidcu2oqm0e9p'" >> distelli.yml
+    - echo "Environments:" >> distelli.yml
+    - echo "  - Messenger-webhook" >> distelli.yml
+    - echo "wget -qO- https://pipelines.puppet.com/download/client | sh " >> distelli.yml
+    - echo "/usr/local/bin/distelli agent install -conf /etc/distelli.yml " >> distelli.yml
+    - echo "/usr/local/bin/distelli login -conf /etc/distelli.yml " >> distelli.yml
+    - echo cat distelli.yml | sshpass -p mudar#123 ssh root@178.128.176.201 'bash -'
     #ssh root@178.128.176.201
     #mudar#123
     #sudo /usr/local/bin/distelli agent install
