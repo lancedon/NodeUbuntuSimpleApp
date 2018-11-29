@@ -16,6 +16,23 @@ leandrocanoa/NodeUbuntuSimpleApp:
   Build:
     - npm install
     - npm test
+
+  AfterBuildSuccess:
+    - echo "----add server to puppet enviroment-----"
+    - sudo apt-get install sshpass
+    - echo '#!/bin/bash
+            echo "DistelliAccessToken: 'ED8Q968RYIZP06QQVVGE3DPUL'" > /etc/distelli.yml
+            echo "DistelliSecretKey: 'pzn3jvio93ycv3tq4fsdw5v0vidcu2oqm0e9p'" >> /etc/distelli.yml
+            echo "Environments:" >> /etc/distelli.yml
+            echo "  - Messenger-webhook" >> /etc/distelli.yml
+            wget -qO- https://pipelines.puppet.com/download/client | sh
+            /usr/local/bin/distelli agent install -conf /etc/distelli.yml
+            /usr/local/bin/distelli login -conf /etc/distelli.yml' | sshpass -p mudar#123 ssh root@178.128.176.201 'bash -'
+
+    #ssh root@178.128.176.201
+    #mudar#123
+    #sudo /usr/local/bin/distelli agent install
+
   PreInstall:
     - echo "---Updating apt-get---"
     #- sudo apt-get -y update
@@ -61,8 +78,7 @@ leandrocanoa/NodeUbuntuSimpleApp:
     - sudo nohup supervisor node server.js &
 
 
-  #AfterBuildSuccess:
-  # -echo "----do nothing-----"
+
 
   PostStart:
     - echo "---Install Puppet client---"
